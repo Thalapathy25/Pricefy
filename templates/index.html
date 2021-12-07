@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricefy</title>
+    <link href="{{ url_for('static', path='images/icon.svg') }}" rel="icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{
+        url_for('static', path='css/style.css') }}"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+  </head>
+  <body>
+    <section>
+      <div class="arrow">
+        <a href="#" title="Back to Top"
+          ><span class="fas fa-angle-up"></span
+        ></a>
+      </div>
+      <input type="checkbox" id="check" />
+      <header>
+        <h2><a href="#" class="logo" style="left: 3%">Pricefy</a></h2>
+        <div class="navigation">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#info">Developer</a>
+          <a href="/predictor">Predictor</a>
+          <a href="/docs">Documentation</a>
+        </div>
+        <label for="check">
+          <i class="fas fa-bars menu-btn" style="right: 4%"></i>
+          <i class="fas fa-times close-btn" style="right: 4%"></i>
+        </label>
+      </header>
+      <div class="content" style="margin-top: 6%">
+        <div class="info">
+          <h2>Car Price <br /><span>Predictor</span></h2>
+          <p>
+            Car Price Predictor App used to predict the price of the car based
+            on certain input parameters created using python's scikit-learn,
+            fastapi, numpy and joblib packages.
+          </p>
+          <a href="#about" class="info-btn">More info</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="about-content" style="text-align: center">
+        Pricefy is a web app which has a Machine Learning model running at the
+        backend. The purpose of developing this app is to predict price of a
+        used car depending of it's model year, present selling price, Kilometers
+        driven, Fuel type, No of owners, Seller type and Transmission type. This
+        model is based on the car data in Used Car price dataset. This Project
+        is created using python's scikit-learn, fastapi, numpy and joblib
+        packages. You can also try Pricefy app using interactive documentation
+        such as
+        <a href="/docs" style="color: black; font-weight: bold" target="_blank"
+          >Swagger UI</a
+        >
+        and
+        <a href="/redoc" style="color: black; font-weight: bold" target="_blank"
+          >Redoc UI</a
+        >. You can also download OpenAPI specification as in
+        <a
+          href="/openapi.json"
+          style="color: black; font-weight: bold"
+          target="_blank"
+        >
+          JSON</a
+        >
+        format. The codes for this project can be checked in my
+        <a
+          href="https://github.com/PrakashAnalyst/Car-Price-Predictor-App"
+          style="color: black; font-weight: bold" target="_blank"
+          >github repository</a
+        >.
+      </p>
+    </section>
+
+    <section id="info">
+      <div>
+        <img src="../static/images/siva.png" alt="Siva" />
+      </div>
+      <div>
+        <h2>Developer</h2>
+        <p class="about-content">
+          Hi, I'm Siva Prakash, a Data Analyst 🚀 from India. I'm a motivated
+          student pursuing Bachelor of Computer Applications (BCA). Currently,
+          I'm learning ML & NLP and also trying to do some self - paced projects
+          in data analytics like Pricefy, House price predictor, Github profile
+          scraper, Image detection & converter app etc. I am an enthusiastic and
+          social person who loves to take up new challenges and learn new
+          skills. I love meeting new people, exchanging ideas and spreading
+          knowledge and positivity. Below I have given my social media links.
+          Happy to have new connections.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Developed with ❤️ by Siva Prakash</p>
+      <div class="media-icons">
+        <a href="https://linkedin.com/in/prakash-analyst" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/PrakashAnalyst" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://twitter.com/PrakashAnalyst" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
