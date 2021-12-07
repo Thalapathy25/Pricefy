@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Price Predictor</title>
+    <title>Predictor</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -31,7 +31,7 @@
       </p>
       <div id="form-container">
         <div id="form-wrapper">
-          <form action="/predict" method="post">
+          <form action="/predictor/predict" method="post">
             <div class="flex: 6">
               <input
                 id="model_year"
@@ -105,7 +105,7 @@
                 type="button"
                 onclick="location.href='/docs';"
                 style="float: right; background-color: rgb(90, 101, 104)"
-                value="Documentation"
+                value="OpenAPI"
               />
             </div>
           </form>

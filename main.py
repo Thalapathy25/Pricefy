@@ -13,11 +13,16 @@ templates = Jinja2Templates(directory="templates")
 
 
 @app.get("/", response_class=HTMLResponse)
+async def home_index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
+
+
+@app.get("/predictor", response_class=HTMLResponse)
 async def read_item(request: Request):
     return templates.TemplateResponse("predictor.html", {"request": request})
 
 
-@app.post("/predict", response_class=HTMLResponse)
+@app.post("/predictor/predict", response_class=HTMLResponse)
 async def predict(
     request: Request,
     model_year: int = Form(...),
